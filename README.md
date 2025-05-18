@@ -1,7 +1,4 @@
 # TEAM_395
 ### Website Demo
 
-<video width="640" height="360" controls>
-  <source src="WEBSITE%20demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://drive.google.com/file/d/1O80B5k8ZVxLvF5iM3n-iW2txGDZAzGeB/view?usp=drivesdk
