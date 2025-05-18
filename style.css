@@ -1,0 +1,139 @@
+/* Base Styles */
+body {
+    background-color: rgba(249, 250, 251, 1);
+    font-family: sans-serif;
+}
+
+/* Page Section Visibility */
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: block;
+}
+
+/* Product Card Animations */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 50;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(5, 150, 105, 1);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Navigation Links */
+nav a:hover {
+    color: rgba(167, 243, 208, 1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, rgba(16, 185, 129, 1), rgba(5, 150, 105, 1));
+    color: white;
+    padding: 4rem 0;
+}
+
+/* Form Inputs */
+input:focus, 
+select:focus, 
+textarea:focus {
+    outline: none;
+    border-color: rgba(16, 185, 129, 1);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: rgba(5, 150, 105, 1);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: rgba(4, 120, 87, 1);
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(5, 150, 105, 1);
+}
+
+/* Cart Badge */
+.cart-count {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: rgba(239, 68, 68, 1);
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 9999px;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    margin-top: 1rem;
+}
+
+/* Dashboard Styles */
+.dashboard-header {
+    background: linear-gradient(to right, rgba(5, 150, 105, 1), rgba(4, 120, 87, 1));
+    padding: 2rem 0;
+    color: white;
+}
+
+.dashboard-nav-item.active {
+    background-color: rgba(209, 250, 229, 1);
+    color: rgba(6, 95, 70, 1);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(31, 41, 55, 1);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
